@@ -14,6 +14,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LoginPages from './components/LoginPages';
 import Registration from './components/Registration';
 import HomePageBesant from './components/HomePageBesant';
+import Trainerdetails from './components/classComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,6 +27,7 @@ root.render(
       <Route path='/login' element={<LoginPages/>}/>
       <Route path='/register' element={<Registration/>}/>
       <Route path='/homepage' element={<HomePageBesant/>}/>
+      <Route path='/trainer' element={<Trainerdetails/>}/>
    </Routes>
    </BrowserRouter>
 </Provider>

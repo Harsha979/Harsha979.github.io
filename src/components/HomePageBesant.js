@@ -50,10 +50,10 @@ function HomePageBesant (){
 
     return(
         <div >
-            <input type="number" onChange={(e)=>setNum(e.target.value)}></input>
+            {/* <input type="number" onChange={(e)=>setNum(e.target.value)}></input>
             <button onClick={()=>showConsole()}>Calculate</button>
             <input type="text" ref={count} value={calculatedValue}></input>
-            <button onClick={()=>count.current.focus()}>focus</button>
+            <button onClick={()=>count.current.focus()}>focus</button> */}
         <input type="radio" checked={value == "male"} onChange={()=>{setValue("male")}}></input>
          <label>Male</label>
          <input type="radio" checked={value == "female"} onChange={()=>{setValue("female")}}></input>
@@ -64,7 +64,7 @@ function HomePageBesant (){
         <div style={{display:"inline-flex",placeContent:"center",margin:"10% 10% 0% 0"}}>
            {fruits.map((elements,index)=>{
                return (
-                <div onClick={()=>navigate("/")}  className={"homepage"}>
+                <div onClick={()=>navigate("/trainer")}  className={"homepage"}>
                     {elements}
                 </div>
                )
