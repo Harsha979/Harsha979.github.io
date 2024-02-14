@@ -1,0 +1,9 @@
+.homepage{
+    display:grid;
+    place-content: center;
+    color:red;
+    width:15vw;
+    height:18vh;
+    background-color: black;
+    margin :1%;
+}
