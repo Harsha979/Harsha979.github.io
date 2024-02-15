@@ -20,7 +20,7 @@ function App(){
   
   return(
     <div style={{display:"grid"}}>
-      {/* <h1>Welcome to Besant Technologies</h1> */}
+      <h1>Welcome</h1>
       <button type="submit" onClick={()=>{navigate("/login")}}>SIGN IN</button>
       <button type="submit" onClick={()=>{navigate("/register")}}>SIGN UP</button>
       {/* <h1>Welcome to </h1> */}
