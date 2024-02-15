@@ -24,7 +24,7 @@ class Trainerdetails extends React.Component {
     render(){
         return(
             <div>
-              <input type="text" onChange={(e)=>this.setValue(e)}></input>
+              {/* <input type="text" onChange={(e)=>this.setValue(e)}></input> */}
                 <h1 style={{color:this.state.color}}>{this.state.value}</h1>
                 {this.state.value==="trainer details" ?<ChildTrainerClass />:<div/>}
                 <table style={{border:"1px solid black"}}>
