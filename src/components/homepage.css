@@ -1,9 +1,58 @@
-.homepage{
+.homepageDiv{
+    background-color: cadetblue;
+    width:100vw;
+    height:100vh;
+}
+
+.linksDiv{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1%;
+    background-color: darkgray;
+}
+
+.link{
+    font-size: 20px;
+    color: black;
+}
+
+.blogDiv{
+    display: flex;
+    justify-content: center;
+    animation: move 2s;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+@keyframes move {
+    0%{
+        font-size: 0px;
+        letter-spacing: 60px;
+    }
+    100%{
+        font-size: 20px;
+        letter-spacing: 0.2px;
+    }
+    
+}
+
+
+.homeContainer{
+    max-width: 650px;
+    padding: 0 30px 0 30px;
+    border-radius:10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.25);
     display:grid;
-    place-content: center;
-    color:red;
-    width:15vw;
-    height:18vh;
-    background-color: black;
-    margin :1%;
+    height:65vh;
+    flex-basis: 350px;
+    flex-shrink: 0;
+    overflow: auto;
+    background-color: whitesmoke;
+}
+.coursesDiv{
+    display: flex;
+    justify-content: space-evenly;
+
 }

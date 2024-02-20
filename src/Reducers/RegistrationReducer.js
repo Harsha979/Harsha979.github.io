@@ -1,13 +1,13 @@
 const defaultState={
-    username:"",
-    password:"",
-    mobileNuber:""
+    username:"besant",
+    password:"123",
+    loggedIn:false,
 }
 
 function RegisterReducer(state=defaultState,action){
       switch (action.type){
         case "Register":
-            return {...state,username:action.payload.username,password:action.payload.password,mobileNumber:action.payload.mobileNumber}
+            return {...state,username:action.payload.username,password:action.payload.password,loggedIn:action.payload.loggedIn}
         default:
             return state;
       }

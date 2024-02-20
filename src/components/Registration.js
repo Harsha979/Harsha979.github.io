@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "./Registration.css";
+import img from './besant.jpeg';
 
 function Registration(){
     const [userName,setUserName]=useState("");
@@ -13,10 +15,10 @@ function Registration(){
                 "3":"other"};
 
     function checkInputsNotEmpty(){
-        if(userName !=""){
-            if(password !=""){
-                if(mobileNumber !=""){
-                    if(address !=""){
+        if(userName !==""){
+            if(password !==""){
+                if(mobileNumber !==""){
+                    if(address !==""){
                         dispact({type:"Register",payload:{username:userName,password:password}})
                         alert("Registration Sucess")
                         navigate("/login")
@@ -38,9 +40,11 @@ function Registration(){
     }
     const navigate=useNavigate();
     return(
-       <div style={{display:"grid"}}>
+        <div className="registerDiv">
+       <div  className="registerContainer">
+        Already user Please
+        <Link to="/login">SignIn</Link>
         <h1>Registration Page</h1>
-    
         <label>userName</label>
         <input type="text" required="true" value={userName} onChange={(e)=>{setUserName(e.target.value)}}></input>
         <label>password</label>
@@ -55,9 +59,14 @@ function Registration(){
                 return <option>{elements}</option>
            })}
         </select>
-
-        <button type="submit" onClick={()=>checkInputsNotEmpty()}>Register</button>
-        
+        <button className="registerButton" type="submit" onClick={()=>checkInputsNotEmpty()}>Register</button>
+       </div>
+        <div className="paragraphDiv">
+            <p className="paragraph">
+            Besant Technologies Offering Online & Classroom Training Courses on AWS, Python, Data Science, Devops, Selenium, ML, AI, RPA, Azure, Digital Marketing, Full Stack Developer, Tableau, Java, Angular, Power BI etc. Best Software Training Institute in Chennai.
+            </p>
+            <img alt="basicimage" src={img}></img>
+        </div>
        </div>
     );
 

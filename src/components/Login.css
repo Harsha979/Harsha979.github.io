@@ -1,0 +1,39 @@
+.loginDiv{
+    background-color: antiquewhite;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.loginContainer{
+    max-width: 650px;
+    margin:8% 0 0 10%;
+    padding: 30px;
+    border-radius:10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.25);
+    display:grid;
+    gap:2%;
+    height:70vh;
+    flex-basis: 350px;
+    flex-shrink: 0;
+    overflow: auto;
+}
+.loginButton{
+    height:5vh;
+    background-color: darkslategrey;
+    color:white;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 20px;
+}
+.gobackButton{
+    height:5vh;
+    background-color: darkgreen;
+    color:white;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 20px;
+}

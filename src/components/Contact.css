@@ -1,0 +1,22 @@
+.contactDiv{
+    display: grid;
+    place-items: center;
+}
+
+.contactContainer{
+    max-width: 650px;
+    margin:3% 0 0 28%;
+    padding: 30px;
+    border-radius:10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.25);
+    display:grid;
+    gap:2%;
+    height:85vh;
+    flex-basis: 350px;
+    flex-shrink: 0;
+    overflow: auto;
+    background-color: lightgray;
+}
