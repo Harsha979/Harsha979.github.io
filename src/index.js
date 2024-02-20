@@ -26,7 +26,7 @@ root.render(
 <Provider store={store}>
    <BrowserRouter>
    <Routes>
-      <Route index element={<App/>}/>
+      <Route index element={<HomePageBesant/>}/>
       <Route path='/login' element={<LoginPages/>}/>
       <Route path='/register' element={<Registration/>}/>
       <Route path='/homepage' element={<HomePageBesant/>}/>
