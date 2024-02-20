@@ -21,7 +21,7 @@ function Quiz(){
     },[city])
     const navigate=useNavigate();
     function checkScore(){
-         alert("your score is"+(courseScore+cityScore))
+         alert("your score is "+(courseScore+cityScore))
          navigate("/homepage")
     }
 
