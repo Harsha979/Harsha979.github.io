@@ -1,0 +1,14 @@
+.quiz{
+    height: 100vh;
+    background-color: lightgreen;
+    display: grid;
+    place-items: center
+}
+.submitButton{
+    height:5vh;
+    background-color: darkslategrey;
+    color:white;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 20px;
+}

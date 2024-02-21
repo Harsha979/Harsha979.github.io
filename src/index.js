@@ -29,7 +29,6 @@ root.render(
       <Route index element={<HomePageBesant/>}/>
       <Route path='/login' element={<LoginPages/>}/>
       <Route path='/register' element={<Registration/>}/>
-      <Route path='/homepage' element={<HomePageBesant/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/quiz' element={<Quiz/>}/>

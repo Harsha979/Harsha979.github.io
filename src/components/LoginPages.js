@@ -19,7 +19,7 @@ function LoginPages(){
                 else{
                     dispatch({type:"Register",payload:{username:selector.username,password:selector.password,loggedIn:true}})
                     alert("login Sucess")
-                    navigate("/homepage")
+                    navigate("/")
                 }
             }
             else{

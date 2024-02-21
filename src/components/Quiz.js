@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Quiz.css";
+
 
 function Quiz(){
 
@@ -12,21 +14,37 @@ function Quiz(){
         if(course === "Both"){
             setCourseScore(1)
         }
-    },[course])
-
-    useEffect(()=>{
         if(city === "Chennai"){
             setCityScore(1)
         }
-    },[city])
+    },[course,city])
+
     const navigate=useNavigate();
     function checkScore(){
+        if(course !== "" && city !== ""){
          alert("your score is "+(courseScore+cityScore))
-         navigate("/homepage")
+         navigate("/")
+        }else{
+            alert("please answer all questions")
+        }
     }
 
+    const [value,setValue]=useState(0);
+    const colors=["red","blue","green","white","orange"]
+
+    useEffect(()=>{
+        const interval=setInterval(()=>{
+                setValue((v)=>{
+                    return v===5 ? 0 : v+1;
+                })
+        },[6000])
+        // return clearInterval(interval)
+    },[])
+
+
     return(
-        <div>
+        <div className="quiz" style={{backgroundColor:colors[value]}}>
+            <div style={{fontSize:"25px"}}>
             <h1>Quiz</h1>
             <p>1.Which Courses Besant Technologies provide?</p>
             <input type="radio" checked={course === "Java"} onChange={()=>setCourse("Java")}></input>
@@ -43,7 +61,8 @@ function Quiz(){
             <input type="radio" checked={city === "Patna"} onChange={()=>setCity("Patna")}></input>
             <label>Patna</label>
             <div>
-            <button onClick={()=>checkScore()}>SUBMIT</button>
+            <button onClick={()=>checkScore()} className="submitButton">SUBMIT</button>
+            </div>
             </div>
         </div>
     )

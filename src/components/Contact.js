@@ -4,10 +4,14 @@ import { SiGmail } from "react-icons/si";
 import { IoMdCall } from "react-icons/io";
 import { Link } from "react-router-dom";
 import "./Contact.css";
+import Navbar from "./NavBar";
 
 function Contact(){
 
     return(
+        <div>
+            <Navbar/>
+        <div className="contactMainDiv">
         <div className="contactContainer">
             <div className="contactDiv">
                 <h1>Contact Through Below Options</h1>
@@ -26,13 +30,14 @@ function Contact(){
                     <Link to="">
                     <SiGmail></SiGmail>
                     </Link>
-                    <p>Gmail</p>
+                    <p>besanttechnologies@gmail.com</p>
                     <Link to="">
                     <IoMdCall></IoMdCall>
                     </Link>
-                    <p>Phone(99999999999)</p>
-                    <Link to="/homepage">Home</Link>
+                    <p>+91 8099770770</p>
             </div>
+        </div>
+        </div>
         </div>
     )
 }

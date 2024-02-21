@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.64d6d897.css",
-    "main.js": "/static/js/main.66d7e9bf.js",
+    "main.js": "/static/js/main.4892bebc.js",
     "static/js/787.10e7df65.chunk.js": "/static/js/787.10e7df65.chunk.js",
     "static/media/besant.jpeg": "/static/media/besant.00dfd6c31d90914d2fce.jpeg",
     "index.html": "/index.html",
     "main.64d6d897.css.map": "/static/css/main.64d6d897.css.map",
-    "main.66d7e9bf.js.map": "/static/js/main.66d7e9bf.js.map",
+    "main.4892bebc.js.map": "/static/js/main.4892bebc.js.map",
     "787.10e7df65.chunk.js.map": "/static/js/787.10e7df65.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64d6d897.css",
-    "static/js/main.66d7e9bf.js"
+    "static/js/main.4892bebc.js"
   ]
 }
